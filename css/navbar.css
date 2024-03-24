@@ -71,20 +71,23 @@ nav ul li a:hover {
     }
 
     nav ul.hide {
-        position: absolute;
+        /* position: absolute; */
         flex-direction: column;
-        align-items: end;
+        align-items: center;
+        justify-content: center;
         display: none;
         background-color: var(--section-background-color60);
         width: 100vw;
-        height: 100vh;
-        top: 85px;
-        right: 0;
+        height: 90vh;
+        /* top: 85px; */
+        /* right: 0; */
         z-index: 1;
+        transition: display 600s ease-in-out, height 600ms ease-in-out;
     }
 
     nav ul li {
         margin-left: unset;
-        padding: 1rem;
+        padding: 3rem 0rem;
+       
     }
 }
