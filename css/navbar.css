@@ -35,6 +35,10 @@ div.wrapper {
     flex-wrap: wrap;
 }
 
+div.wrapper i {
+    display: none;
+}
+
 nav ul {
     list-style: none;
     display: flex;
@@ -78,13 +82,18 @@ nav ul li a:hover {
 
     div.wrapper i {
         color: var(--accent-color10);
+        display: block;
     }
 
-    nav ul {
+    div.wrapper a {
+        text-decoration: none;
+    }
+
+    nav ul.hide {
         position: absolute;
         flex-direction: column;
         align-items: end;
-        /* display: none; */
+        display: none;
         background-color: var(--section-background-color60);
         width: 100vw;
         height: 100vh;

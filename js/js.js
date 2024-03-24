@@ -1,5 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
    
+    const hamburger = document.querySelector('.fa-solid');
+    const ulDisplay = document.querySelector('ul');
+  
+    hamburger.addEventListener('click', (event) => {
+        event.preventDefault();
+      
+        
+        if (ulDisplay.style.display === 'none' || ulDisplay.style.display === '') {
+            ulDisplay.style.display = 'flex';
+        } else {
+            ulDisplay.style.display = 'none';
+        }
+    });
+
     const links = () => {
         const getLinks = document.getElementsByClassName('link');
 
