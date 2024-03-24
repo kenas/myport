@@ -2,25 +2,6 @@ nav {
     padding: 1.3rem;
     background-color: var(--section-background-color60);
 }
-
-div.navbar {
-    /* background-color: var(--section-background-color60); */
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    z-index: -1; */
-}
-    
-div.navbar svg {
-    /* position: relative;
-    display: block;
-    width: calc(187% + 1.3px);
-    height: 231px; */
-}
     
 div.navbar .shape-fill {
     fill: var(--section-background-color60);
