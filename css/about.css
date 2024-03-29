@@ -20,4 +20,9 @@ section.about div.container p {
 
 section.about div.container div.icons {
     display: flex;
+    flex-wrap: wrap;
+}
+
+section.about div.container div.icons i {
+    margin: 2rem 1rem;
 }
