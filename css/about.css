@@ -1,0 +1,23 @@
+section.about {
+    background-color: var(--section-background-color60);
+    padding: 3rem;
+    color: var(--accent-color10);
+}
+
+section.about div.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section.about div.container p {
+    text-align: center;
+    padding: 3rem 0rem;
+    line-height: 2;
+}
+
+section.about div.container div.icons {
+    display: flex;
+}
