@@ -2,6 +2,14 @@ section.portfolio {
     background-color: var(--section-background-color30);
 }
 
+section.portfolio h2 {
+    text-align: center;
+    padding-top: 6rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
 section.portfolio div.container {
     display: flex;
     flex-wrap: wrap;
@@ -9,9 +17,9 @@ section.portfolio div.container {
 
 section.portfolio div.container picture {
     max-width: 400px;
-    max-height: 900px;
+    max-height: 770px;
     overflow: hidden;
-    padding: 6rem 1.875rem 0rem;
+    padding: 3rem 1.875rem 0rem;
 }
 
 section.portfolio div.container picture img {
@@ -20,11 +28,11 @@ section.portfolio div.container picture img {
 }
 
 section.portfolio div.container picture:nth-last-of-type(2) img {
-    margin-top: 5.625rem;
+    margin-top: 2.625rem;
 }
 
 section.portfolio div.container picture:nth-last-of-type(1) img {
-    margin-top: 11.25rem;
+    margin-top: 5.25rem;
 }
 
 
@@ -42,11 +50,21 @@ section.portfolio-details div.container {
 } 
 
 section.portfolio-details div.description h3{
-    padding: 2rem 0rem;
+    padding-bottom: 2rem;
 }
 
 section.portfolio-details div.description p {
     line-height: 1.7;
+    margin: 1rem 0rem;
+}
+
+section.portfolio-details div.description a {
+    color: var(--accent-color10);
+    text-decoration: none;
+}
+
+section.portfolio-details div.description a:hover {
+    border-bottom: 2px solid var(--accent-color10);
 }
 
 section.portfolio-details div.tags ul {
@@ -58,7 +76,6 @@ section.portfolio-details div.tags ul li {
     background-color: var(--tags-background-color);
     color: var(--tags-color);
     padding: 1rem;
-    text-transform: uppercase;
     margin: 0.7rem;
     border-radius: 0.2rem;
 }
@@ -66,12 +83,33 @@ section.portfolio-details div.tags ul li {
 /* Mobile */
 @media only screen and (max-width: 768px) {
 
+    section.portfolio h2 {
+        padding-top: 3rem;
+        font-weight: 100;
+        letter-spacing: unset;
+    }
+
     section.portfolio div.container picture {
         max-height: fit-content;
     }
 
+    section.portfolio div.container {
+       display: flex;
+    }
+
+    section.portfolio div.container picture:nth-last-of-type(2) img {
+        margin-top: unset;
+    }
+
+    section.portfolio div.container picture:nth-last-of-type(1) img {
+        margin-top: unset;
+        margin-bottom: 3rem;
+    }
+    
     section.portfolio-details div.container {
-        flex-direction: column;
+        flex-direction: column-reverse;
+        margin: 0rem 2rem;
+        text-align: center;
     }
 
     section.portfolio-details { 
