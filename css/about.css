@@ -1,6 +1,6 @@
 section.about {
     background-color: var(--section-background-color60);
-    padding: 3rem;
+    padding: 9rem 0rem;
     color: var(--accent-color10);
 }
 
@@ -9,13 +9,12 @@ section.about div.container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 section.about div.container p {
     text-align: center;
     padding: 3rem 0rem;
-    line-height: 2;
+    line-height: 1.7;
 }
 
 section.about div.container div.icons {
@@ -25,4 +24,9 @@ section.about div.container div.icons {
 
 section.about div.container div.icons i {
     margin: 2rem 1rem;
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    
 }
