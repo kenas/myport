@@ -64,10 +64,6 @@ section.portfolio-details div.description a {
     border-bottom: 2px solid var(--accent-color10);
 }
 
-section.portfolio-details div.description a:hover {
-    
-}
-
 section.portfolio-details div.tags ul {
     display: flex;
 }
@@ -119,5 +115,14 @@ section.portfolio-details div.tags ul li {
 
     section.portfolio-details div.description {
         margin: 0.9375rem;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) { 
+    section.portfolio-details div.container {
+        flex-direction: column;
+        margin: 0rem 2rem;
+        text-align: center;
     }
 }

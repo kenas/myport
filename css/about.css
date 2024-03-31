@@ -38,5 +38,12 @@ section.about div.container div.icons i {
         padding: 3rem 0rem;
         line-height: 1.7;
     }
-    
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px) { 
+    section.about div.container {
+        margin: 0rem 2rem;
+       }
+       
 }
