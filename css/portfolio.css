@@ -61,10 +61,11 @@ section.portfolio-details div.description p {
 section.portfolio-details div.description a {
     color: var(--accent-color10);
     text-decoration: none;
+    border-bottom: 2px solid var(--accent-color10);
 }
 
 section.portfolio-details div.description a:hover {
-    border-bottom: 2px solid var(--accent-color10);
+    
 }
 
 section.portfolio-details div.tags ul {
@@ -81,7 +82,7 @@ section.portfolio-details div.tags ul li {
 }
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 570px) {
 
     section.portfolio h2 {
         padding-top: 3rem;

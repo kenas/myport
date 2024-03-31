@@ -27,7 +27,7 @@ section.about div.container div.icons i {
 }
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 570px) {
 
     section.about div.container {
      margin: 0rem 2rem;
