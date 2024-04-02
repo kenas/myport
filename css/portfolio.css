@@ -1,5 +1,10 @@
 section.portfolio {
-    background-color: var(--section-background-color30);
+    /* background-color: var(--section-background-color30); */
+    background: rgb(2,44,58);
+    background: -moz-linear-gradient(203deg, rgba(2,44,58,1) 0%, rgba(6,121,160,1) 100%);
+    background: -webkit-linear-gradient(203deg, rgba(2,44,58,1) 0%, rgba(6,121,160,1) 100%);
+    background: linear-gradient(203deg, rgba(2,44,58,1) 0%, rgba(6,121,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c3a",endColorstr="#0679a0",GradientType=1); 
 }
 
 section.portfolio h2 {
