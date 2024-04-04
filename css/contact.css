@@ -7,6 +7,8 @@ main {
     margin: 7rem 0rem;
     padding: 6rem 0rem;
     color: var(--accent-color10);
+    transform: translateY(-30%);
+    transition: transform 800ms ease-out;
 }
 
 main div.container {
@@ -47,10 +49,15 @@ main section.form textarea {
     border-bottom: unset;
 }
 
+textarea::placeholder {
+    font-size: 1.2rem;
+}
+
 main section.form input::placeholder, textarea::placeholder {
     color: var(--accent-color10);
     opacity: 1;
     font-size: 1.2rem;
+    font-family:  serif;
 }
 
 main section.form input:focus, textarea {
@@ -82,4 +89,10 @@ main section.myself div.social {
 
 main section.myself div.social i {
     color: var(--skils-icons-color);
+}
+
+main section.myself img{
+    transform: translateY(-30%);
+    transition: transform 1200ms;
+    
 }
