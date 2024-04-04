@@ -2,6 +2,13 @@ document.addEventListener('DOMContentLoaded', () => {
    
     const hamburger = document.querySelector('.fa-solid');
     const ulDisplay = document.querySelector('ul');
+
+    const navBarAnimation = document.querySelector('nav');
+
+    navBarAnimation.style.transform = "translateY(0%)";
+    navBarAnimation.style.opacity = "1";
+
+    
   
     hamburger.addEventListener('click', (event) => {
         event.preventDefault();
@@ -21,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         getLinksArray.forEach(element => {
             element.addEventListener('click', (event) => {
-                event.preventDefault();
+                //event.preventDefault();
                 element.classList.add('active');
             });
         });
