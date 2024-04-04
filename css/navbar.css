@@ -1,6 +1,8 @@
 nav {
     padding: 1.3rem;
     background-color: var(--section-background-color60);
+    transform: translateY(-100%);
+    transition: transform 1400ms;
 }
     
 div.navbar .shape-fill {
@@ -47,7 +49,9 @@ nav ul li a:hover {
     font-weight: 600;
     padding: 0.5125rem 0rem;
     border-bottom: 2px solid var(--accent-color10);
-    transition: border-bottom 100ms ease-in-out;
+    position: relative;
+    left: -20px;
+    transition: left 1400ms;
 }
 
 /* Mobile */
