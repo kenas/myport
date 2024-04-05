@@ -27,7 +27,7 @@ footer div.container {
 }
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 570px) {
     footer {
         margin: 3rem 0rem;
     }
@@ -45,5 +45,4 @@ footer div.container {
         flex-direction: column;
         align-items: center;
     }
-
 }
