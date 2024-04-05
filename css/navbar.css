@@ -1,4 +1,4 @@
-nav {
+nav.main {
     padding: 1.3rem;
     background-color: var(--section-background-color60);
     transform: translateY(-100%);
