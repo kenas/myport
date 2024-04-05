@@ -1,4 +1,4 @@
-nav {
+nav.main {
     background-color: unset;
 }
 
@@ -95,4 +95,21 @@ main section.myself img{
     transform: translateY(-30%);
     transition: transform 1200ms;
     
+}
+
+/* Mobile */
+@media only screen and (max-width: 570px) {
+    main div.container {
+        gap: unset;
+        flex-direction: column;
+    }
+
+    main section.form {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    main section.form h2 {
+        font-size: 2.5rem
+    }
 }
