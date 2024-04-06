@@ -107,7 +107,7 @@ section.portfolio-details div.tags ul li {
 
     section.portfolio div.container {
        display: flex;
-       max-width: 368px;
+       max-width: 90%;
     }
 
     section.portfolio div.container picture:nth-last-of-type(2) img {
