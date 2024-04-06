@@ -103,11 +103,12 @@ section.portfolio-details div.tags ul li {
 
     section.portfolio div.container picture {
         max-height: fit-content;
+        max-width: 390px;
     }
 
     section.portfolio div.container {
        display: flex;
-       max-width: 90%;
+       max-width: 100%;
        justify-content: center;
     }
 
@@ -143,9 +144,9 @@ section.portfolio-details div.tags ul li {
         text-align: center;
     }
 
-    section.portfolio div.container picture {
+    /* section.portfolio div.container picture {
         max-width: 370px;
-    }
+    } */
 
     section.portfolio div.container picture:nth-last-of-type(1) img {
         margin-top: unset;
