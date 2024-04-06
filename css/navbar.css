@@ -49,9 +49,6 @@ nav ul li a:hover {
     font-weight: 600;
     padding: 0.5125rem 0rem;
     border-bottom: 2px solid var(--accent-color10);
-    position: relative;
-    left: -20px;
-    transition: left 1400ms;
 }
 
 
