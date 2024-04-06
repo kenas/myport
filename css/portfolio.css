@@ -64,9 +64,19 @@ section.portfolio-details div.description p {
 }
 
 section.portfolio-details div.description a {
-    color: var(--accent-color10);
+    color: white;
+    border-radius: 0.8rem;
+    background: rgb(2,44,58);
+    background: -moz-linear-gradient(203deg, rgba(2,44,58,0.7357143541010154) 0%, rgba(6,121,160,1) 100%);
+    background: -webkit-linear-gradient(203deg, rgba(2,44,58,0.7357143541010154) 0%, rgba(6,121,160,1) 100%);
+    background: linear-gradient(203deg, rgba(2,44,58,0.7357143541010154) 0%, rgba(6,121,160,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c3a",endColorstr="#0679a0",GradientType=1); 
+    border: unset;
     text-decoration: none;
-    border-bottom: 2px solid var(--accent-color10);
+    padding: 2rem 4rem;
+    display: inline-block;
+    margin: 3rem 0rem;
+    text-transform: uppercase;
 }
 
 section.portfolio-details div.tags ul {
