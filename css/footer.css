@@ -29,6 +29,12 @@ footer div.container {
 
 /* Mobile */
 @media only screen and (max-width: 570px) {
+
+    nav.footer ul li {
+        padding: 1.5rem;
+        margin: 1.7rem 0rem;
+    }
+
     footer {
         margin: 3rem 0rem;
     }
@@ -45,5 +51,6 @@ footer div.container {
     footer div.container nav ul {
         flex-direction: column;
         align-items: center;
+        transition: ease-in;
     }
 }

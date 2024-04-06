@@ -60,7 +60,7 @@ nav.main div.logo {
     color: var(--accent-color10);
 }
 nav.main div.logo span {
-    margin: 0.3rem;
+    margin: 0.8rem 0rem;
 }
 
 /* Mobile */

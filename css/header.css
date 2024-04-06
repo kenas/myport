@@ -41,6 +41,8 @@ header div.links a:first-child {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c3a",endColorstr="#0679a0",GradientType=1); 
     margin-right: 2.75rem;
     border: unset;
+    display: inline-block;
+    transform: translateY(-50%);
 }
 
 header div.links a {
