@@ -24,6 +24,7 @@ footer nav {
 footer div.container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 /* Mobile */
