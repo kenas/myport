@@ -9,6 +9,8 @@ main {
     color: var(--accent-color10);
     transform: translateY(-30%);
     transition: transform 800ms ease-out;
+    -moz-transform: translateY(-30%);
+    -moz-transition: transform 800ms ease-out;
 }
 
 main div.container {
@@ -49,8 +51,52 @@ main section.form textarea {
     border-bottom: unset;
 }
 
+textarea::-webkit-input-placeholder {
+    font-size: 1.2rem;
+}
+
+textarea::-moz-placeholder {
+    font-size: 1.2rem;
+}
+
+textarea:-ms-input-placeholder {
+    font-size: 1.2rem;
+}
+
+textarea::-ms-input-placeholder {
+    font-size: 1.2rem;
+}
+
 textarea::placeholder {
     font-size: 1.2rem;
+}
+
+main section.form input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: var(--accent-color10);
+    opacity: 1;
+    font-size: 1.2rem;
+    font-family:  serif;
+}
+
+main section.form input::-moz-placeholder, textarea::-moz-placeholder {
+    color: var(--accent-color10);
+    opacity: 1;
+    font-size: 1.2rem;
+    font-family:  serif;
+}
+
+main section.form input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: var(--accent-color10);
+    opacity: 1;
+    font-size: 1.2rem;
+    font-family:  serif;
+}
+
+main section.form input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    color: var(--accent-color10);
+    opacity: 1;
+    font-size: 1.2rem;
+    font-family:  serif;
 }
 
 main section.form input::placeholder, textarea::placeholder {
