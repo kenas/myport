@@ -97,7 +97,7 @@ nav.main div.logo span {
         align-items: center;
         justify-content: center;
         display: none;
-        background-color: var(--section-background-color60);
+        background-color: unset;
         width: 100vw;
         height: 85vh;
         /* top: 85px; */
@@ -136,7 +136,7 @@ nav.main div.logo span {
         align-items: center;
         justify-content: center;
         display: none;
-        background-color: var(--section-background-color60);
+        /* background-color: var(--section-background-color60); */
         width: 100vw;
         height: 85vh;
         /* top: 85px; */
