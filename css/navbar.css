@@ -69,6 +69,10 @@ nav.main div.logo span {
 /* Mobile */
 @media only screen and (max-width: 570px) {
 
+    nav.main div.logo span {
+        display: none;
+    }
+
     div.wrapper {
         flex-direction: row;
         width: 100%;
