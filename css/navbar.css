@@ -54,6 +54,18 @@ nav ul li a:hover {
     transition: left 1400ms;
 }
 
+
+nav.main div.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+    color: var(--accent-color10);
+}
+nav.main div.logo span {
+    margin: 0.3rem;
+}
+
 /* Mobile */
 @media only screen and (max-width: 570px) {
 
