@@ -19,15 +19,16 @@ document.addEventListener('DOMContentLoaded', () => {
     
    //Loop via pictures and add events include efects
     arrayOFPic.forEach(picture => {
-      
+ 
         picture.addEventListener('mouseover', () => {
-            picture.style.transform = 'translateY(-1%)';
+            picture.style.transform = 'scale(1.5)';
             picture.style.transition = '500ms ease-out';
         });
 
         picture.addEventListener('mouseleave', () => {
-            picture.style.transform = 'translateY(0%)';
+            picture.style.transform = 'scale(1)';
             picture.style.transition = '500ms ease-out';
         });
     });
 });
+
