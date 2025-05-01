@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     containerIconsSkills.forEach(icon => {
        icon.addEventListener('mouseover', () => {
-           icon.style.transform = "translateX(15%)";
+           icon.style.transform = "translateX(30%)";
            icon.style.transition = '100ms ease-out';
            
        });
