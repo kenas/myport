@@ -1,43 +1,73 @@
+*   {
+        box-sizing: border-box;
+    }
 section.portfolio {
-    /* background-color: var(--section-background-color30); */
+    /*background-color: var(--section-background-color30);*/
+    background-position: center;
     background: rgb(2,44,58);
     background: -moz-linear-gradient(203deg, rgba(2,44,58,1) 0%, rgba(6,121,160,1) 100%);
     background: -webkit-linear-gradient(203deg, rgba(2,44,58,1) 0%, rgba(6,121,160,1) 100%);
     background: linear-gradient(203deg, rgba(2,44,58,1) 0%, rgba(6,121,160,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c3a",endColorstr="#0679a0",GradientType=1); 
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c3a",endColorstr="#0679a0",GradientType=1);
+    -webkit-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c3a",endColorstr="#0679a0",GradientType=1);
 }
-
 section.portfolio h2 {
     text-align: center;
-    padding-top: 6rem;
-    color: white;
+    color: var(--section-background-color60);
     text-transform: uppercase;
     letter-spacing: 0.1rem;
+    padding: 4rem 0rem;
 }
 
-section.portfolio div.container {
+section.porfolio, #wrapper {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    /* padding: 10rem 0rem; */
+    width: 100%;
 }
 
-section.portfolio div.container picture {
-    max-width: 400px;
-    max-height: 770px;
-    overflow: hidden;
-    padding: 4.5rem 1.875rem 0rem;
+section.portfolio #wrapper .arrowPrev {
+  rotate: 180deg;
+}
+section.portfolio, .arrowNext, .arrowPrev {
+    cursor: pointer;
 }
 
-section.portfolio div.container picture img {
-    max-width: 100%;
+section.portfolio #wrapper #carousel {
+   width: 1200px;
+   height: 500px;
+   overflow: hidden;
+}
+
+section.portfolio #wrapper #carousel .carousel-container {
+    width: 2400px;
+    display: flex;
+    justify-content: space-around;
+    transition: transform 0.5s ease;
+}
+
+section.portfolio #wrapper #carousel .carousel-container .slider {
+    display: flex;
+    gap: 2rem;
+    width: 1200px;
+    /* flex-shrink: 0; */
+}
+
+section.portfolio picture {
+    width: 400px;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+section.portfolio picture img {
+    width: 100%;
     border-radius: 1rem;
-}
-
-section.portfolio div.container picture:nth-last-of-type(2) img {
-    margin-top: 2.625rem;
-}
-
-section.portfolio div.container picture:nth-last-of-type(1) img {
-    margin-top: 5.25rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
 }
 
 
@@ -48,11 +78,33 @@ section.portfolio-details {
     color: var(--accent-color10);
 }
 
-section.portfolio-details div.container {
+section.portfolio-details h2  {
+    color: var(--accent-color10);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+section.portfolio-details div.wrapper div.container {
     display: flex;
     gap: 4rem;
     align-items: center;
-} 
+    flex-direction: column;
+    transition: transform 0.5s ease;
+}
+
+section.portfolio-details div.wrapper .carousel {
+    overflow: hidden;
+    height: 400px;
+}
+
+section.portfolio-details div.wrapper .carousel div.container  div.track {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    flex-direction: row-reverse;
+    /* border: 1px solid green; */
+}
+
 
 section.portfolio-details div.description h3{
     padding-bottom: 2rem;
@@ -101,6 +153,11 @@ section.portfolio-details div.tags ul li {
         letter-spacing: unset;
     }
 
+    section.porfolio, #wrapper {
+        gap: 2rem;
+      
+    }
+
     section.portfolio div.container picture {
         max-height: fit-content;
         max-width: 390px;
@@ -112,8 +169,21 @@ section.portfolio-details div.tags ul li {
        justify-content: center;
     }
 
+    section.portfolio #wrapper #carousel {
+        max-width: 230px;
+    }
+
+    section.portfolio #wrapper #carousel .carousel-container .slider {
+        flex-direction: column;
+    }
+
+    section.portfolio picture {
+        max-width: 210px;
+    }
+
     section.portfolio div.container picture:nth-last-of-type(2) img {
         margin-top: unset;
+        
     }
 
     section.portfolio div.container picture:nth-last-of-type(1) img {
@@ -130,9 +200,22 @@ section.portfolio-details div.tags ul li {
     section.portfolio-details { 
         margin: 7rem 0rem;
     }
+    section.portfolio-details div.wrapper .carousel {
+        height: 600px;
+        border: 1px solid red;
+    }
 
+    section.portfolio-details div.wrapper .carousel div.container  div.track {
+        flex-direction: column-reverse;
+        gap: unset;
+        border: 2px solid green;
+    }
     section.portfolio-details div.description {
         margin: 0.9375rem;
+    }
+
+    section.portfolio-details div.description a {
+        padding: 1rem 4rem;
     }
 }
 
@@ -142,11 +225,10 @@ section.portfolio-details div.tags ul li {
         flex-direction: column;
         margin: 0rem 2rem;
         text-align: center;
+        flex-direction: column-reverse;
+        gap: 0rem;
     }
 
-    /* section.portfolio div.container picture {
-        max-width: 370px;
-    } */
 
     section.portfolio div.container picture:nth-last-of-type(1) img {
         margin-top: unset;
