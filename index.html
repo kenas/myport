@@ -18,16 +18,22 @@
     <script src="js/js.js"></script>
     <script src="js/pictures.js"></script>
     <script src="js/skill.js"></script>
-    <script src="js/buttons.js"></script>
+
+    
+    <!-- Module scripts -->
+    <script type="module" src="js/PictureClass.js" defer></script>
+    <script type="module" src="js/PictureClassInit.js" defer></script>
 </head>
 <body>
- 
+
     <nav class="main">
         <div class="wrapper">
 
             <div class="logo">
-              <img src="img/logo/logo.svg" alt="Libor Gess logo" width="81" class="thelogo">
-              <span>Building Tomorrow's Reality</span>
+                <a href="./index.html">
+                    <img src="img/logo/logo.svg" alt="Libor Gess logo" width="81" class="thelogo">
+                </a>
+              <span>Crafting web experiences</span>
             </div>
             <a href="" class="hamburger"><i class="fa-solid fa-bars fa-2xl"></i></a>
             <ul class="hide">
@@ -42,7 +48,6 @@
 
     <div class="container">
         <header>
-  
             <h1>
                 <strong>Hello! I'm  Libor,</strong><br>
                 a passionate Junior <strong>front-end<br>  Developer</strong> ready to turn ideas into<br>
@@ -70,43 +75,106 @@
     <main>
         <section class="portfolio" id="portfolio">
             <h2>My Portfolio</h2>
-            <div class="container">
-                
-                <picture>
-                    <img src="img/test2.png" alt="Screenshot of the project, mobile version">
-                </picture>
-                <picture>
-                    <img src="img/test.png" alt="Screenshot of the project, landing page">
-                </picture>
-                <picture>
-                    <img src="img/test3.png" alt="Screenshot of the project, single page showing the article.">
-                </picture>
-            </div>
+                <div id="wrapper">
+                    <img src="./img/arrow.svg" alt="Move to the previous project" class="arrowNext">
+                        <div id="carousel">
+                            <div class="carousel-container">
+                                <div class="slider">
+                                    <picture>
+                                        <!-- <div>Test</div> -->
+                                        <img src="img/test2.png" alt="Screenshot of the project, mobile version" >
+                                    </picture>
+                                    <picture>
+                                        <!-- <div>Test</div> -->
+                                        <img src="img/test.png" alt="Screenshot of the project, landing page">
+                                    </picture>
+                                    <picture>
+                                        <!-- <div>Test</div> -->
+                                        <img src="img/test3.png" alt="Screenshot of the project, single page showing the article.">
+                                    </picture>
+                                </div>
+
+                                <div class="slider">
+                                    <picture>
+                                        <!-- <div>Test</div> -->
+                                        <img src="img/groots/1.png" alt="">
+                                    </picture>
+                                    <picture>
+                                        <!-- <div>Test</div> -->
+                                        <img src="img/groots/2.png" alt="">
+                                    </picture>
+                                    <picture>
+                                        <!-- <div>Test</div> -->
+                                        <img src="img/groots/2.png" alt="">
+                                    </picture>
+                                </div>
+
+                            </div>
+                            
+                    </div>
+                    <img src="./img/arrow.svg" alt="Move to the next project" class="arrowPrev">
+                </div>
         </section>
 
         <section class="portfolio-details">
-            <div class="container">
+            <div class="wrapper">
+                <div class="carousel">
+                    <div class="container">
 
-                <div class="tags">
-                    <ul>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>html</li>
-                    </ul>
-                </div>
-
-                <div class="description">
-                    <h3>The name of the projet: WisdomWoven</h3>
-                    <p>
-                        The WisdomWoven project evolved from my Codecademy learning journey.  
-                        Tasked with creating a website using skills just acquired from the  chapter, 
-                        the design phase spanned two days, followed by two days of  coding by Disang. 
-                    </p>
-                    <p>
-                        <a href="https://kenas.github.io/javascripIndependentProject/" target="_blank">
-                            See the live version here
-                        </a>
-                    </p>
+                    <div class="track">
+                        <div class="tags">
+                            <ul>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>html</li>
+                                <li>AI</li>
+                            </ul>
+                        </div>
+        
+                        <div class="description">
+                            <h2>WisdomWoven</h2>
+                            <p>
+                                The WisdomWoven project evolved from my Codecademy learning journey. 
+                                Tasked with creating a website using newly acquired skills from the chapter, 
+                                I spent two days on the design phase, followed by two days of coding by Disang 
+                            </p>
+                            <p>
+                                <a href="https://kenas.github.io/javascripIndependentProject/" target="_blank">
+                                    See the live version here
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                        
+                    <div class="track">
+                        <div class="tags">
+                            <ul>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>html</li>
+                                <li>AI</li>
+                            </ul>
+                        </div>
+        
+                        <div class="description">
+                            <h2>Gypsy roots</h2>
+                            <p>
+                                Gypsy Roots is a creative and visually expressive website that I designed and built as
+                                part of my learning journey through Codecademy’s front-end development path. 
+                                The idea for the project came from a friend, whose inspiring concept sparked the 
+                                direction and mood of the entire design.
+        
+                                The site was built in just one day—both design and development—showcasing my ability 
+                                to take an idea from concept to completion efficiently. All visual elements, 
+                                including images, were generated using AI tools.
+                            </p>
+                            <p>
+                                <a href="https://kenas.github.io/codeacademycompanyhomepageflexbox/enindex.html" target="_blank">
+                                    See the live version here
+                                </a>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -114,16 +182,22 @@
         <section class="about" id="about">
         
             <div class="container">
+                <div class="description">
+                    <h2>From Curiosity to Code</h2>
+                        <p>
+                            Motivated career-changer.
+                            Passionate and solution-driven front-end developer with a deep curiosity for how things work. I love breaking down complex problems, asking the right questions, and figuring out the best solutions — because understanding is the key to building great applications.
 
-         
-                <h2>Who am I?</h2>
-                <p>I'm not just a coder; I'm an architect of the web. 
-                    My journey in Full Stack Development has equipped me with the skills to bring both front-end 
-                    beauty and back-end brilliance to the table. From crafting  sleek user interfaces to 
-                    optimizing server-side processes, I thrive on  creating seamless, end-to-end solutions.
-                </p>
+                            When I take on a task, I go all in until I get it done.
+                            Proficient in HTML, CSS, JavaScript, and React, and currently working with AI technologies to enhance functionality and user experience.
+
+                            I’m eager to apply my problem-solving mindset and creativity to real-world challenges.
+                        </p>
+                </div>
+
 
                 <div class="icons">
+                    <i class="fa-brands fa-react fa-2xl"></i>
                     <i class="fa-brands fa-square-js fa-2xl"></i>
                     <i class="fa-brands fa-html5 fa-2xl"></i>
                     <i class="fa-brands fa-git fa-2xl"></i>
@@ -140,8 +214,10 @@
     <footer>
         <div class="container">
             <div class="logo">
-                <img src="img/logo/logo.svg" alt="Libor Gess logo" width="70" class="thelogo">
-                <span>Building Tomorrow's Reality</span>
+                <a href="./index.html">
+                    <img src="img/logo/logo.svg" alt="Libor Gess logo" width="70" class="thelogo">
+                </a>
+                <span>Crafting web experiences</span>
             </div>
             <nav class="footer">
                 <ul>
@@ -154,5 +230,7 @@
         </div>
 
     </footer>
+
+
 </body>
 </html>
