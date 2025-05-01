@@ -2,28 +2,35 @@ section.about {
     background-color: var(--section-background-color60);
     padding: 9rem 0rem;
     color: var(--accent-color10);
+    transition: transform 0.5s ease;
 }
 
 section.about div.container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
+    gap: 4rem;
+}
+
+section.about div.container .description h2 {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
 }
 
 section.about div.container p {
-    text-align: center;
     padding: 3rem 0rem;
     line-height: 1.7;
 }
 
 section.about div.container div.icons {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 section.about div.container div.icons i {
     margin: 2rem 1rem;
+    cursor: pointer;
 }
 
 /* Mobile */
@@ -31,12 +38,21 @@ section.about div.container div.icons i {
 
     section.about div.container {
      margin: 0rem 2rem;
+     flex-direction: column;
+     text-align: center;
     }
     
     section.about div.container p {
-        text-align: center;
         padding: 3rem 0rem;
         line-height: 1.7;
+    }
+
+    section.about div.container h2 {
+        text-align: center;
+    }
+
+    section.about div.container div.icons {
+        flex-wrap: wrap;
     }
 }
 
@@ -44,6 +60,5 @@ section.about div.container div.icons i {
 @media only screen and (max-width: 768px) { 
     section.about div.container {
         margin: 0rem 2rem;
-       }
-       
+       }       
 }
