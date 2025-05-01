@@ -3,6 +3,7 @@ nav.main {
     background-color: var(--section-background-color60);
     transform: translateY(-100%);
     transition: transform 1400ms;
+    border-bottom: 1px solid hsl(195, 12%, 94%);
 }
     
 div.navbar .shape-fill {
@@ -61,6 +62,7 @@ nav.main div.logo {
 }
 nav.main div.logo span {
     margin: 0.8rem 0rem;
+    font-size: 1rem;
 }
 
 /* Mobile */
