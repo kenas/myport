@@ -207,8 +207,8 @@ section.portfolio-details div.tags ul li {
     section.portfolio-details div.wrapper .carousel div.container  div.track {
         flex-direction: column-reverse;
         gap: unset;
-        border: 2px solid green;
     }
+    
     section.portfolio-details div.description {
         margin: 0.9375rem;
     }
