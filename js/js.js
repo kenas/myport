@@ -1,39 +1,60 @@
-document.addEventListener('DOMContentLoaded', () => {
-   
-    const hamburger = document.querySelector('.fa-solid');
-    const ulDisplay = document.querySelector('ul');
+export class Navigation {
+    constructor() {
+        this.hamburger = document.querySelector('.fa-solid');
+        this.ulDisplay = document.querySelector('ul');
+        this.navBarAnimation = document.querySelector('nav');
+        this.topNavLinks = document.querySelectorAll('nav .link');    
+        this.linksArray = [];
 
-    const navBarAnimation = document.querySelector('nav');
+        this.init();
+    }
 
-    navBarAnimation.style.transform = "translateY(0%)";
-    navBarAnimation.style.opacity = "1";
+    init() {
+        this.showNavBar();
+        this.setupHamburgerToggle();
+        this.setupLinks();
+        this.clickedScrollToElement();
+    }
 
-    
-  
-    hamburger.addEventListener('click', (event) => {
-        event.preventDefault();
-      
-        
-        if (ulDisplay.style.display === 'none' || ulDisplay.style.display === '') {
-            ulDisplay.style.display = 'flex';
-        } else {
-            ulDisplay.style.display = 'none';
-        }
-    });
+    showNavBar() {
+        this.navBarAnimation.style.transform = "translateY(0%)";
+        this.navBarAnimation.style.opacity = "1";
+    }
 
-    const links = () => {
+    setupHamburgerToggle() {
+        this.hamburger.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            const isHidden = this.ulDisplay.style.display === 'none' || this.ulDisplay.style.display === '';
+            this.ulDisplay.style.display = isHidden ? 'flex' : 'none';
+        });
+    }
+
+    setupLinks() {
         const getLinks = document.getElementsByClassName('link');
+        this.linksArray = [...getLinks];
 
-        getLinksArray = [...getLinks];
-    
-        getLinksArray.forEach(element => {
-            element.addEventListener('click', (event) => {
-                //event.preventDefault();
-                element.classList.add('active');
+        this.linksArray.forEach(link => {
+            link.addEventListener('click', () => {
+                link.classList.add('active');
             });
         });
     }
 
-    links();
-
-});
+    clickedScrollToElement = () => {
+        this.topNavLinks.forEach(link => {
+            let href = link.getAttribute('href');
+    
+            if (href.startsWith('#')) {
+                link.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    const target = document.querySelector(href);
+    
+                    if (target) {
+                        target.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            }
+        });
+    };
+}
