@@ -53,6 +53,8 @@ export class Navigation {
                     if (target) {
                         target.scrollIntoView({ behavior: "smooth" });
                     }
+
+                    href === '#about' ? target.style.transform = "translateY(-27px)" : console.log('other');    
                 });
             }
         });
