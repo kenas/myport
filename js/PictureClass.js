@@ -9,7 +9,7 @@ export class Picture {
         this.about = document.querySelector('.about');
         this.currentFrameSlide = 0;
         this.addEventListeners();
-        this.showSkills()
+        // this.showSkills()
     }
 
     
@@ -55,17 +55,4 @@ export class Picture {
             this.test.style.transform = `translateY(-${index * 400}px)`;
           }
     }
-
-    showSkills = () => {
-       window.addEventListener("scroll", () => {
-            let offset = window.scrollY;
-         
-        if (offset >= 2005) {
-                this.about.style.transform = `translateY(-120px)`;
-            } else {
-                this.about.style.transform = `translateY(0px)`;
-            }
-        });
-    }
-
 }
