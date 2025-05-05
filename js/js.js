@@ -3,7 +3,7 @@ export class Navigation {
         this.hamburger = document.querySelector('.fa-solid');
         this.ulDisplay = document.querySelector('ul');
         this.navBarAnimation = document.querySelector('nav');
-        this.topNavLinks = document.querySelectorAll('nav .link');    
+        this.navLinks = document.querySelectorAll('nav .link');    
         this.linksArray = [];
 
         this.init();
@@ -42,21 +42,22 @@ export class Navigation {
     }
 
     clickedScrollToElement = () => {
-        this.topNavLinks.forEach(link => {
+
+        this.navLinks.forEach(link => {
             let href = link.getAttribute('href');
-    
+           console.log(href)
             if (href.startsWith('#')) {
                 link.addEventListener('click', (event) => {
                     event.preventDefault();
                     const target = document.querySelector(href);
-    
+                    console.log(target)
                     if (target) {
                         target.scrollIntoView({ behavior: "smooth" });
                     }
 
-                    href === '#about' ? target.style.transform = "translateY(-27px)" : console.log('other');    
+                    href === '#about' ? target.style.transform = "translateY(-27px)" : '';    
                 });
             }
-        });
-    };
+        })
+    }
 }
