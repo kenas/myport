@@ -3,7 +3,8 @@ export class Navigation {
         this.hamburger = document.querySelector('.fa-solid');
         this.ulDisplay = document.querySelector('ul');
         this.navBarAnimation = document.querySelector('nav');
-        this.navLinks = document.querySelectorAll('nav .link');    
+        this.navLinks = document.querySelectorAll('nav .link');
+        this.body = document.getElementsByTagName('body')[0];
         this.linksArray = [];
 
         this.init();
@@ -45,12 +46,13 @@ export class Navigation {
 
         this.navLinks.forEach(link => {
             let href = link.getAttribute('href');
-           console.log(href)
+    
             if (href.startsWith('#')) {
                 link.addEventListener('click', (event) => {
+                    this.applyEffect();
+                    
                     event.preventDefault();
                     const target = document.querySelector(href);
-                    console.log(target)
                     if (target) {
                         target.scrollIntoView({ behavior: "smooth" });
                     }
@@ -59,5 +61,10 @@ export class Navigation {
                 });
             }
         })
+    }
+
+    applyEffect() {
+
+        this.body.classList.add('bodyEffect');
     }
 }
