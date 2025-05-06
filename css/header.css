@@ -17,6 +17,15 @@ header h1 strong {
     font-weight: 600;
 }
 
+.headerEffect {
+    background-color: var(--section-background-color60);
+    transition: background-color s10 ease;
+    -webkit-transition: background-color s10 ease;
+    -moz-transition: background-color s10 ease;
+    -ms-transition: background-color s10 ease;
+    -o-transition: background-color s10 ease;
+}
+
 header img {
     grid-column: 2;
     grid-row: 1 /span 2;
@@ -28,6 +37,8 @@ header div.links {
     margin: 6rem 0;
     grid-column: 1;
     grid-row: 2;
+    display: flex;
+    gap:3rem
 }
 
 header div.links a:first-child {
@@ -37,10 +48,10 @@ header div.links a:first-child {
     background: rgb(2,44,58);
     background: linear-gradient(203deg, rgba(2,44,58,0.7357143541010154) 0%, rgba(6,121,160,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#022c3a",endColorstr="#0679a0",GradientType=1); 
-    margin-right: 2.75rem;
-    border: unset;
+    /* margin-right: 2.75rem; */
+    /* border: unset; */
     display: inline-block;
-    transform: translateY(-50%);
+ 
 }
 
 header div.links a {
