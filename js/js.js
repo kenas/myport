@@ -4,8 +4,9 @@ export class Navigation {
         this.ulDisplay = document.querySelector('ul');
         this.navBarAnimation = document.querySelector('nav');
         this.navLinks = document.querySelectorAll('nav .link');
-        this.body = document.getElementsByTagName('body')[0];
+        this.headerEffect = document.getElementsByTagName('header')[0];
         this.linksArray = [];
+        this.scroll =  window.scrollY;
 
         this.init();
     }
@@ -43,10 +44,14 @@ export class Navigation {
     }
 
     clickedScrollToElement = () => {
+        const exploreButton = document.getElementsByClassName('explore')[0];
+       
+        let newLinks = Array.from(this.navLinks);
+        newLinks.push(exploreButton);
 
-        this.navLinks.forEach(link => {
+        newLinks.forEach(link => {
             let href = link.getAttribute('href');
-    
+
             if (href.startsWith('#')) {
                 link.addEventListener('click', (event) => {
                     this.applyEffect();
@@ -54,7 +59,9 @@ export class Navigation {
                     event.preventDefault();
                     const target = document.querySelector(href);
                     if (target) {
+                        
                         target.scrollIntoView({ behavior: "smooth" });
+                        
                     }
 
                     href === '#about' ? target.style.transform = "translateY(-27px)" : '';    
@@ -64,7 +71,16 @@ export class Navigation {
     }
 
     applyEffect() {
+        
+        addEventListener('scroll', (event) => {
+            // console.log(window.scrollY)        
+            
+            // if(window.scrollY >= 300) {
+            //       this.headerEffect.style.display = 'none';
+            // } else {
+            //     this.headerEffect.style.display = 'grid';
+            // }
+        })
 
-        this.body.classList.add('bodyEffect');
     }
 }
