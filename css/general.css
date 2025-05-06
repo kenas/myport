@@ -8,15 +8,6 @@ body {
     
 }
 
-.bodyEffect {
-    background-color: var(--section-background-color60);
-    transition: background-color s10 ease;
-    -webkit-transition: background-color s10 ease;
-    -moz-transition: background-color s10 ease;
-    -ms-transition: background-color s10 ease;
-    -o-transition: background-color s10 ease;
-}
-
 :root {
     --accent-color10: hsl(193deg, 39%, 43%);
     --section-background-color30: hsl(195deg, 93%, 12%);
